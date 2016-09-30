@@ -1,0 +1,80 @@
+/*
+AUT DMS S1 2016
+Assignment 2: - Multitier Web Application
+ Prouting, Sez (0308852) and Shaw, Aziel (14847095)
+
+    Author     : Sez Prouting
+*/
+
+.main-content {
+  position: relative;
+  text-align: center;
+  top: 30px;
+}
+
+img.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+div.head {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 130px;
+    background: rgb(0,0,0); /* for IE */
+    background: rgba(0,0,0,0.7);
+    padding: 0px;
+}
+
+.header {
+    color: whitesmoke;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+h2.header {
+    top: 50px;
+}
+
+form.rel-pos {
+    position: relative;
+   top: 0;
+}
+
+input.form-centred {
+    position: absolute;
+	left: 60%;
+   /* top: 10px;*/
+}
+
+table, td {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+th, td {
+    padding: 5px;
+}
+
+input.delete[type='submit'] {
+    background-color: darkslategray;
+    color: whitesmoke;
+    border: inherit;
+    border-radius: 5px;
+}
+
+input.delete[type='submit']:active {
+    background-color: firebrick;
+    color: whitesmoke;
+    border: inherit;
+    border-radius: 5px;
+}
+
+

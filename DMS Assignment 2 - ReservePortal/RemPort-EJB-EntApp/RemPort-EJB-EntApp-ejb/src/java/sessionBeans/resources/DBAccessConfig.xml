@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<!--
+AUT DMS S1 2016
+Assignment 2: - Multitier Web Application
+ Prouting, Sez (0308852) and Shaw, Aziel (14847095)
+ 
+ Provides standard keys for the access of DB tables and columns. Should be 
+ accessed only via use of DBPropertiesBean
+ 
+ Author: Sez Prouting
+-->
+
+<properties>
+<comment>Database Access Configuration Properties</comment>
+
+<!-- Database connection  -->
+<entry key="dbDriver">com.mysql.jdbc.Driver</entry>
+<entry key="dbUrl">jdbc:mysql://azieliotor.ddns.net:52002/dmsass2</entry>
+<entry key="dbUrlLAN">jdbc:mysql://azielserver/dmsass2</entry>
+<entry key="user">DMSuser</entry>
+<entry key="password">sethhall</entry>
+
+<!-- Table names  -->
+<entry key="requestsTable">requests</entry>
+<entry key="fulltimeTable">perm_emp</entry>
+<entry key="reservesTable">reserve_emp</entry>
+
+<!-- ID colmuns  -->
+<entry key="fulltimeID">perm_emp.p_emp_id</entry>
+<entry key="reserveID">reserve_emp.r_emp_id</entry>
+
+<entry key="reserveIDinRequestTable">requests.r_emp_id</entry>
+<entry key="fulltimeIDinRequestsTable">requests.p_emp_id</entry>
+
+<entry key="requestID">requestID</entry>
+
+<!-- name columns  -->
+<entry key="fulltimeFirstName">perm_emp.p_fName</entry>
+<entry key="fulltimeLastName">perm_emp.p_lName</entry>
+<entry key="reserveFirstName">reserve_emp.r_fName</entry>
+<entry key="reserveLastName">reserve_emp.r_lName</entry>
+
+<!-- contact details  -->
+<entry key="fulltimeWorkAddress">perm_emp.p_workingAddress</entry>
+<entry key="reservePhone">reserve_emp.r_phoneNumber</entry>
+
+<!-- fulltime misc  -->
+<entry key="isManager">perm_emp.manager</entry>
+<entry key="fulltimeStartTime">perm_emp.start_time</entry>
+<entry key="fulltimeEndTime">perm_emp.end_time</entry>
+<entry key="region">perm_emp.p_region</entry>
+
+<!-- reserve misc  -->
+<entry key="available">reserve_emp.available</entry>
+<entry key="reserveLicenceExpiry">reserve_emp.r_licence_expiry</entry>
+
+<!-- requests misc -->
+<entry key="pending">pending</entry>
+<entry key="accepted">accepted</entry>
+<entry key="dayOfWeek">dayOfWeek</entry>
+
+
+</properties>
